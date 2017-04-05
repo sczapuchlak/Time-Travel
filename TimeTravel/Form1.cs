@@ -12,6 +12,9 @@ namespace TimeTravel
 {
     public partial class Form1 : Form
     {
+        string[] travelLocations =
+            {"Select a vacation...","Prehistoric Era", "Ancient Greece", "Ancient Egypt", "Renaissance",
+            "Golden Age of Piracy", "19th Century Britain", "Wild Wild West", "The Roaring 20's", "World War II", "The Future"};
         public Form1()
         {
             InitializeComponent();
