@@ -63,16 +63,21 @@
             // 
             // pboxLocationPicture
             // 
-            this.pboxLocationPicture.Location = new System.Drawing.Point(350, 129);
+            this.pboxLocationPicture.BackColor = System.Drawing.SystemColors.ControlText;
+            this.pboxLocationPicture.BackgroundImage = global::TimeTravel.Properties.Resources.roaring20s;
+            this.pboxLocationPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pboxLocationPicture.Location = new System.Drawing.Point(329, 128);
             this.pboxLocationPicture.Name = "pboxLocationPicture";
-            this.pboxLocationPicture.Size = new System.Drawing.Size(253, 224);
+            this.pboxLocationPicture.Size = new System.Drawing.Size(275, 224);
             this.pboxLocationPicture.TabIndex = 2;
             this.pboxLocationPicture.TabStop = false;
             // 
             // lblLocationDesc
             // 
             this.lblLocationDesc.AutoSize = true;
+            this.lblLocationDesc.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblLocationDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocationDesc.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblLocationDesc.Location = new System.Drawing.Point(38, 129);
             this.lblLocationDesc.Name = "lblLocationDesc";
             this.lblLocationDesc.Size = new System.Drawing.Size(180, 24);
