@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace TimeTravel
 {
-    public partial class Form1 : Form
+    public partial class frmBookingDate : Form
     {
     
-        public Form1()
+        public frmBookingDate()
         {
             InitializeComponent();
 
@@ -42,6 +42,11 @@ namespace TimeTravel
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnChooseVacay_Click(object sender, EventArgs e)
+        {
+            new frmBookingDate.show();
         }
     }
 }
