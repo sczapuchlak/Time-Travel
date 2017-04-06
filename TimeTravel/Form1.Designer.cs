@@ -74,16 +74,14 @@
             // 
             // lblLocationDesc
             // 
-            this.lblLocationDesc.AutoSize = true;
             this.lblLocationDesc.BackColor = System.Drawing.SystemColors.Desktop;
-            this.lblLocationDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocationDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLocationDesc.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblLocationDesc.Location = new System.Drawing.Point(38, 129);
+            this.lblLocationDesc.Location = new System.Drawing.Point(25, 139);
             this.lblLocationDesc.Name = "lblLocationDesc";
-            this.lblLocationDesc.Size = new System.Drawing.Size(180, 24);
+            this.lblLocationDesc.Size = new System.Drawing.Size(281, 174);
             this.lblLocationDesc.TabIndex = 3;
             this.lblLocationDesc.Text = "Location Description";
-            this.lblLocationDesc.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnChooseVacay
             // 
@@ -93,6 +91,7 @@
             this.btnChooseVacay.TabIndex = 4;
             this.btnChooseVacay.Text = "Choose This Vacation";
             this.btnChooseVacay.UseVisualStyleBackColor = true;
+            this.btnChooseVacay.Click += new System.EventHandler(this.btnChooseVacay_Click_1);
             // 
             // btnExit
             // 
