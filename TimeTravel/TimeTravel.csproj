@@ -58,6 +58,7 @@
     <Compile Include="frmBookingDate.Designer.cs">
       <DependentUpon>frmBookingDate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Location.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmVacaChooser.resx">
@@ -74,6 +75,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +89,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_hole_time_space_stars_distortion_19957_2560x1440-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boxes+Background+Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate-ship.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate-ship-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19thcentury.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egypt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\futureCity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greece.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hitler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renItaly.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roaring20s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wild-west.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

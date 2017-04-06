@@ -65,24 +65,41 @@
             // 
             // pboxLocationPicture
             // 
+<<<<<<< HEAD:TimeTravel/frmVacaChooser.Designer.cs
             this.pboxLocationPicture.Location = new System.Drawing.Point(467, 159);
             this.pboxLocationPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pboxLocationPicture.Name = "pboxLocationPicture";
             this.pboxLocationPicture.Size = new System.Drawing.Size(337, 276);
+=======
+            this.pboxLocationPicture.BackColor = System.Drawing.SystemColors.ControlText;
+            this.pboxLocationPicture.BackgroundImage = global::TimeTravel.Properties.Resources.roaring20s;
+            this.pboxLocationPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pboxLocationPicture.Location = new System.Drawing.Point(329, 128);
+            this.pboxLocationPicture.Name = "pboxLocationPicture";
+            this.pboxLocationPicture.Size = new System.Drawing.Size(275, 224);
+>>>>>>> origin/master:TimeTravel/Form1.Designer.cs
             this.pboxLocationPicture.TabIndex = 2;
             this.pboxLocationPicture.TabStop = false;
             // 
             // lblLocationDesc
             // 
+<<<<<<< HEAD:TimeTravel/frmVacaChooser.Designer.cs
             this.lblLocationDesc.AutoSize = true;
             this.lblLocationDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLocationDesc.Location = new System.Drawing.Point(51, 159);
             this.lblLocationDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationDesc.Name = "lblLocationDesc";
             this.lblLocationDesc.Size = new System.Drawing.Size(232, 29);
+=======
+            this.lblLocationDesc.BackColor = System.Drawing.SystemColors.Desktop;
+            this.lblLocationDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocationDesc.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblLocationDesc.Location = new System.Drawing.Point(25, 139);
+            this.lblLocationDesc.Name = "lblLocationDesc";
+            this.lblLocationDesc.Size = new System.Drawing.Size(281, 174);
+>>>>>>> origin/master:TimeTravel/Form1.Designer.cs
             this.lblLocationDesc.TabIndex = 3;
             this.lblLocationDesc.Text = "Location Description";
-            this.lblLocationDesc.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnChooseVacay
             // 
@@ -93,7 +110,11 @@
             this.btnChooseVacay.TabIndex = 4;
             this.btnChooseVacay.Text = "Choose This Vacation";
             this.btnChooseVacay.UseVisualStyleBackColor = true;
+<<<<<<< HEAD:TimeTravel/frmVacaChooser.Designer.cs
             this.btnChooseVacay.Click += new System.EventHandler(this.btnChooseVacay_Click);
+=======
+            this.btnChooseVacay.Click += new System.EventHandler(this.btnChooseVacay_Click_1);
+>>>>>>> origin/master:TimeTravel/Form1.Designer.cs
             // 
             // btnExit
             // 
@@ -104,6 +125,7 @@
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmVacaChooser
             // 
