@@ -11,11 +11,6 @@ using System.Windows.Forms;
 namespace TimeTravel
 {
 <<<<<<< HEAD:TimeTravel/frmVacaChooser.cs
-    public partial class frmBookingDate : Form
-    {
-    
-        public frmBookingDate()
-=======
 
     public partial class Form1 : Form
     {
@@ -38,7 +33,21 @@ namespace TimeTravel
                 "prairie grass will. Exercise your right "  +
                 "to bear arms and channel your inner Clint "  +
                 "Eastwood with this exciting adventure.", Properties.Resources.wild_west, "Wild Wild West");
-        Location roaring20sLocation = new Location("Roaring 20s info", Properties.Resources.roaring20s, "The Roaring 20's");
+        Location roaring20sLocation = new Location(
+            "Ahh. The Roaring 20’s. What a time to be alive!" +
+            "Jazz! The Harlem Renaissance! Women’s rights!" +
+            "Speakeasies! Mobsters!" +
+            "The life of flappers and the like"
+            +"seems so much more exciting"+
+            "than your normal trek to neighborhood bar-" +
+            "legally." +
+            "Careful not to get too zozzled and" +
+            "pull a David Boone, though."+
+            "You might land yourself in the Big House" +
+            "with no cabbage." +
+            "If this golden age of America"+
+            "doesn’t appeal to you, go tell it to Sweeney.", Properties.Resources.roaring20s, "The Roaring 20's");
+        
         Location worldWarIILocation = new Location("World War II info", Properties.Resources.hitler, "World War II");
         Location futureLocation = new Location("Future info", Properties.Resources.futureCity, "The Future");
 

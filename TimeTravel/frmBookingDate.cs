@@ -38,5 +38,11 @@ namespace TimeTravel
             datePicker.ShowCheckBox = true;
             datePicker.ShowUpDown = true;
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            label6.Text = ("*Note, regardless of the duration of your trip," +
+                "You will leave and return to the present time on the same date");
+        }
     }
 }
