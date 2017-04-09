@@ -19,11 +19,15 @@ namespace TimeTravel
 
         private void frmBookingDate_Load(object sender, EventArgs e)
         {
-
+            //label display at bottom of form
+            label6.Text = ("*Note, regardless of the duration of your trip," +
+                "You will leave and return to the present time on the same date");
+            //switch statement to display different picture depending on vacation time period
+            //Display Time Period Selected from frm VacaChooser-tripLocation place holder variable until frmVacaChooser complete
+            //txtLocation.Text = Convert.ToString(tripLocation);
         }
         public void CreateDateTimePicker()
         {
-            // Create a new DateTimePicker control and initialize it.
             DateTimePicker datePicker = new DateTimePicker();
 
             // Set the MinDate and MaxDate.
@@ -39,10 +43,46 @@ namespace TimeTravel
             datePicker.ShowUpDown = true;
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            label6.Text = ("*Note, regardless of the duration of your trip," +
-                "You will leave and return to the present time on the same date");
+            //Close form
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //quit application
+            Application.Exit();
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            // diaplay message box if no data in duration text box
+            if (txtDuration.Text == "")
+            {
+                MessageBox.Show("Please enter the length of time you wish to be gone.", "Duration Required");
+            }
+            // display dialog box to connfirm selections
+            //tripLocation and tripDate variables to be retrieved from form 1
+            if (MessageBox.Show("Do you want to book this vacation?", "..."
+                //+ "Location: " + tripLocation +" " + "Date: " tripDate + ".", "Book Trip"
+
+                                 ,MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                                 == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                this.Close();
+            }
+
+        }
+
+        private void dtpTripDate_ValueChanged(object sender, EventArgs e)
+        {
+            //Show date selected in text box
+            txtDateSelected.Text = Convert.ToString(dtpTripDate.Value.Date);
         }
     }
 }

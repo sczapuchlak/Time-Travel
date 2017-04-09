@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.dtpTripDate = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.txtDateSelected = new System.Windows.Forms.TextBox();
             this.lblFormTwoTitle = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDuration = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,33 +49,38 @@
             this.dtpTripDate.Name = "dtpTripDate";
             this.dtpTripDate.Size = new System.Drawing.Size(200, 22);
             this.dtpTripDate.TabIndex = 0;
+            this.dtpTripDate.ValueChanged += new System.EventHandler(this.dtpTripDate_ValueChanged);
             // 
-            // button1
+            // btnBack
             // 
-            this.button1.Location = new System.Drawing.Point(365, 296);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 25);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnBack.Location = new System.Drawing.Point(360, 296);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(63, 25);
+            this.btnBack.TabIndex = 2;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnConfirm
             // 
-            this.button2.Location = new System.Drawing.Point(445, 279);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 42);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Confirm Selections";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnConfirm.Location = new System.Drawing.Point(445, 279);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(100, 42);
+            this.btnConfirm.TabIndex = 3;
+            this.btnConfirm.Text = "Confirm Selections";
+            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
-            // button3
+            // btnCancel
             // 
-            this.button3.Location = new System.Drawing.Point(568, 279);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 42);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Cancel All";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCancel.Location = new System.Drawing.Point(568, 279);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(100, 42);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "Cancel All";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.button3_Click);
             // 
             // txtLocation
             // 
@@ -103,12 +108,12 @@
             this.lblFormTwoTitle.TabIndex = 6;
             this.lblFormTwoTitle.Text = "Please Choose The Date You Would Like To Travel!";
             // 
-            // textBox1
+            // txtDuration
             // 
-            this.textBox1.Location = new System.Drawing.Point(445, 217);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 22);
-            this.textBox1.TabIndex = 7;
+            this.txtDuration.Location = new System.Drawing.Point(445, 217);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(223, 22);
+            this.txtDuration.TabIndex = 1;
             // 
             // label1
             // 
@@ -151,26 +156,27 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(625, 66);
             this.label6.TabIndex = 13;
-            this.label6.Text = "label6";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmBookingDate
             // 
+            this.AcceptButton = this.btnConfirm;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnBack;
             this.ClientSize = new System.Drawing.Size(747, 439);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDuration);
             this.Controls.Add(this.lblFormTwoTitle);
             this.Controls.Add(this.txtDateSelected);
             this.Controls.Add(this.txtLocation);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnConfirm);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dtpTripDate);
             this.Name = "frmBookingDate";
             this.Text = "Date Picker";
@@ -183,13 +189,13 @@
         #endregion
 
         private System.Windows.Forms.DateTimePicker dtpTripDate;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.TextBox txtDateSelected;
         private System.Windows.Forms.Label lblFormTwoTitle;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDuration;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
