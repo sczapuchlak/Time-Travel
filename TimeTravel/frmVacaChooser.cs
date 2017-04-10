@@ -51,7 +51,8 @@ namespace TimeTravel
 
         //selected location
         Location location = null;
-
+        //set static string for location selected to pass to frmBookingDate
+        public static string SelectedItem;
         public frmVacaChooser()
 
         {
@@ -191,6 +192,5 @@ namespace TimeTravel
             
         }
 
-       
     }
 }

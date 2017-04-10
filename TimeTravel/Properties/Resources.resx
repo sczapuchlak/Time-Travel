@@ -118,20 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pirate-ship-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pirate-ship-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hitler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hitler.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pirate-ship" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pirate-ship.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Boxes+Background+Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boxes+Background+Image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="black_hole_time_space_stars_distortion_19957_2560x1440-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\black_hole_time_space_stars_distortion_19957_2560x1440-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="greece" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\greece.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="19thcentury" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\19thcentury.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="futureCity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\futureCity.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black_hole_time_space_stars_distortion_19957_2560x1440-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\black_hole_time_space_stars_distortion_19957_2560x1440-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dinos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dinos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,22 +139,25 @@
   <data name="egypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\egypt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="futureCity" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\futureCity.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Boxes+Background+Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boxes+Background+Image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="greece" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\greece.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hitler" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hitler.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="renItaly" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\renItaly.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wild-west" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wild-west.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="roaring20s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roaring20s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wild-west" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wild-west.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pirate-ship-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pirate-ship-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="renItaly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\renItaly.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pirate-ship" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pirate-ship.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="the_time_machine_large_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\the_time_machine_large_01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

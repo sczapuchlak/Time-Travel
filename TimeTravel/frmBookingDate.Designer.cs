@@ -101,7 +101,9 @@
             // lblFormTwoTitle
             // 
             this.lblFormTwoTitle.AutoSize = true;
+            this.lblFormTwoTitle.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.lblFormTwoTitle.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFormTwoTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblFormTwoTitle.Location = new System.Drawing.Point(38, 24);
             this.lblFormTwoTitle.Name = "lblFormTwoTitle";
             this.lblFormTwoTitle.Size = new System.Drawing.Size(660, 30);
@@ -118,27 +120,36 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(296, 141);
+            this.label1.BackColor = System.Drawing.SystemColors.GrayText;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(266, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 17);
+            this.label1.Size = new System.Drawing.Size(163, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Time Period Selected";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(341, 184);
+            this.label2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(311, 184);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 17);
+            this.label2.Size = new System.Drawing.Size(112, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "Date of Travel";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(332, 220);
+            this.label3.BackColor = System.Drawing.SystemColors.GrayText;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(302, 220);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 17);
+            this.label3.Size = new System.Drawing.Size(123, 17);
             this.label3.TabIndex = 10;
             this.label3.Text = "Duration of Trip";
             // 
@@ -152,6 +163,9 @@
             // 
             // label6
             // 
+            this.label6.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(43, 364);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(625, 66);
@@ -163,6 +177,8 @@
             this.AcceptButton = this.btnConfirm;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::TimeTravel.Properties.Resources.the_time_machine_large_01;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnBack;
             this.ClientSize = new System.Drawing.Size(747, 439);
             this.Controls.Add(this.label6);

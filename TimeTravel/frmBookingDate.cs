@@ -15,9 +15,11 @@ namespace TimeTravel
         public frmBookingDate()
         {
             InitializeComponent();
+            //retrieving static value from frmVacaChooser
+            txtLocation.Text = frmVacaChooser.SelectedItem;
         }
 
-        private void frmBookingDate_Load(object sender, EventArgs e)
+    private void frmBookingDate_Load(object sender, EventArgs e)
         {
             //label display at bottom of form
             label6.Text = ("*Note, regardless of the duration of your trip," +
@@ -61,6 +63,7 @@ namespace TimeTravel
             if (txtDuration.Text == "")
             {
                 MessageBox.Show("Please enter the length of time you wish to be gone.", "Duration Required");
+                txtDuration.Focus();
             }
             // display dialog box to connfirm selections
             //tripLocation and tripDate variables to be retrieved from form 1
