@@ -7,6 +7,7 @@ using System.Drawing;
 
 namespace TimeTravel
 {
+    //class that hold info about eahc location 
     class Location
     {
         public string description;

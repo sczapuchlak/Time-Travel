@@ -13,6 +13,7 @@ namespace TimeTravel
 
     public partial class Form1 : Form
     {
+        //creating instances of the Location class for each location  
         Location prehistoricLocation = new Location("Prehistoric info", Properties.Resources.dinos, "Prehistoric Era");
         Location greeceLocation = new Location("Greece info", Properties.Resources.greece, "Ancient Greece");
         Location egyptLocation = new Location("Ever wonder what the Great Sphinx " +
@@ -42,6 +43,7 @@ namespace TimeTravel
         public Form1()
         {
             InitializeComponent();
+            //hides description and image 
             lblLocationDesc.Visible = false;
             pboxLocationPicture.Visible = false;
             string[] travelLocations =
@@ -63,6 +65,7 @@ namespace TimeTravel
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //shows the description text box and image 
             if (cboTravelOptions.SelectedIndex == 0)
             {
                 lblLocationDesc.Visible = false;
@@ -73,6 +76,7 @@ namespace TimeTravel
                 lblLocationDesc.Visible = true;
                 pboxLocationPicture.Visible = true;
             }
+            //switch statement to determine which location is selected 
             switch (cboTravelOptions.SelectedIndex)
             {
                 case 1:
@@ -106,6 +110,7 @@ namespace TimeTravel
                     future();
                     break;
             }
+            //based on what function is called the description and image are displayed 
             if (location != null)
             {
                 lblLocationDesc.Text = location.description;
@@ -118,6 +123,7 @@ namespace TimeTravel
 
         }
 
+        //functions to set location to the chosen one 
         public void prehistoric()
         {
             location = prehistoricLocation;
