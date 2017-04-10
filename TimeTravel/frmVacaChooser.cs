@@ -10,9 +10,7 @@ using System.Windows.Forms;
 
 namespace TimeTravel
 {
-<<<<<<< HEAD:TimeTravel/frmVacaChooser.cs
-
-    public partial class Form1 : Form
+    public partial class frmVacaChooser : Form
     {
         Location prehistoricLocation = new Location("Prehistoric info", Properties.Resources.dinos, "Prehistoric Era");
         Location greeceLocation = new Location("Greece info", Properties.Resources.greece, "Ancient Greece");
@@ -54,8 +52,8 @@ namespace TimeTravel
         //selected location
         Location location = null;
 
-        public Form1()
->>>>>>> origin/master:TimeTravel/Form1.cs
+        public frmVacaChooser()
+
         {
             InitializeComponent();
             lblLocationDesc.Visible = false;
@@ -128,11 +126,6 @@ namespace TimeTravel
                 pboxLocationPicture.Image = location.image;
             }
         }
-  
-        private void btnChooseVacay_Click(object sender, EventArgs e)
-        {
-
-        }
 
         public void prehistoric()
         {
@@ -189,14 +182,13 @@ namespace TimeTravel
             this.Close();
         }
 
-        private void btnChooseVacay_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnChooseVacay_Click(object sender, EventArgs e)
         {
-            new frmBookingDate.show();
+            Console.WriteLine("Heres some stuff");
+            Form frmBookingDate = new frmBookingDate();
+            frmBookingDate.Show();
         }
+
+       
     }
 }
