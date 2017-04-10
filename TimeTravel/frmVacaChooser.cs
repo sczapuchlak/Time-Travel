@@ -184,9 +184,11 @@ namespace TimeTravel
 
         private void btnChooseVacay_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Heres some stuff");
-            Form frmBookingDate = new frmBookingDate();
-            frmBookingDate.Show();
+
+            frmBookingDate BookingDate = new frmBookingDate();
+            BookingDate.SelectedLocation = location.name;  
+            BookingDate.Show();
+            
         }
 
        

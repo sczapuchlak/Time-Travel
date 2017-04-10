@@ -77,6 +77,12 @@ namespace TimeTravel
                 this.Close();
             }
 
+
+        }
+        
+        public string SelectedLocation
+        {
+            set { txtLocation.Text = value; }
         }
 
         private void dtpTripDate_ValueChanged(object sender, EventArgs e)
