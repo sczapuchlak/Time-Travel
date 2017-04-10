@@ -15,7 +15,7 @@ namespace TimeTravel
         public frmBookingDate()
         {
             InitializeComponent();
-            //retrieving static value from frmVacaChooser
+            //retrieving static value from frmVacaChooser-Needs work
             txtLocation.Text = frmVacaChooser.SelectedItem;
         }
 
@@ -30,6 +30,7 @@ namespace TimeTravel
         }
         public void CreateDateTimePicker()
         {
+            //need to set default to null or "Please Choose Date"
             DateTimePicker datePicker = new DateTimePicker();
 
             // Set the MinDate and MaxDate.
@@ -67,9 +68,10 @@ namespace TimeTravel
             }
             // display dialog box to connfirm selections
             //tripLocation and tripDate variables to be retrieved from form 1
-            if (MessageBox.Show("Do you want to book this vacation?", "..."
-                //+ "Location: " + tripLocation +" " + "Date: " tripDate + ".", "Book Trip"
 
+            //This messagebox needs to NOT show right after the error. Maybe a try-catch before if-else?
+             if (MessageBox.Show("Do you want to book this vacation?", "..."
+                //+ "Location: " + tripLocation +" " + "Date: " tripDate + ".", "Book Trip"
                                  ,MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                                  == DialogResult.Yes)
             {
