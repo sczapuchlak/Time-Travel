@@ -10,8 +10,7 @@ using System.Windows.Forms;
 
 namespace TimeTravel
 {
-
-    public partial class Form1 : Form
+    public partial class frmVacaChooser : Form
     {
         //creating instances of the Location class for each location  
         Location prehistoricLocation = new Location("Prehistoric info", Properties.Resources.dinos, "Prehistoric Era");
@@ -33,14 +32,30 @@ namespace TimeTravel
                 "prairie grass will. Exercise your right "  +
                 "to bear arms and channel your inner Clint "  +
                 "Eastwood with this exciting adventure.", Properties.Resources.wild_west, "Wild Wild West");
-        Location roaring20sLocation = new Location("Roaring 20s info", Properties.Resources.roaring20s, "The Roaring 20's");
+        Location roaring20sLocation = new Location(
+            "Ahh. The Roaring 20’s. What a time to be alive!" +
+            "Jazz! The Harlem Renaissance! Women’s rights!" +
+            "Speakeasies! Mobsters!" +
+            "The life of flappers and the like"
+            +"seems so much more exciting"+
+            "than your normal trek to neighborhood bar-" +
+            "legally." +
+            "Careful not to get too zozzled and" +
+            "pull a David Boone, though."+
+            "You might land yourself in the Big House" +
+            "with no cabbage." +
+            "If this golden age of America"+
+            "doesn’t appeal to you, go tell it to Sweeney.", Properties.Resources.roaring20s, "The Roaring 20's");
+        
         Location worldWarIILocation = new Location("World War II info", Properties.Resources.hitler, "World War II");
         Location futureLocation = new Location("Future info", Properties.Resources.futureCity, "The Future");
 
         //selected location
         Location location = null;
+        //set static string for location selected to pass to frmBookingDate
+        public static string SelectedItem;
+        public frmVacaChooser()
 
-        public Form1()
         {
             InitializeComponent();
             //hides description and image 
@@ -117,11 +132,6 @@ namespace TimeTravel
                 pboxLocationPicture.Image = location.image;
             }
         }
-  
-        private void btnChooseVacay_Click(object sender, EventArgs e)
-        {
-
-        }
 
         //functions to set location to the chosen one 
         public void prehistoric()
@@ -179,9 +189,14 @@ namespace TimeTravel
             this.Close();
         }
 
-        private void btnChooseVacay_Click_1(object sender, EventArgs e)
+        private void btnChooseVacay_Click(object sender, EventArgs e)
         {
 
+            frmBookingDate BookingDate = new frmBookingDate();
+            BookingDate.SelectedLocation = location.name;  
+            BookingDate.Show();
+            
         }
+
     }
 }

@@ -183,6 +183,16 @@ namespace TimeTravel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap the_time_machine_large_01 {
+            get {
+                object obj = ResourceManager.GetObject("the_time_machine_large_01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wild_west {
             get {
                 object obj = ResourceManager.GetObject("wild-west", resourceCulture);
