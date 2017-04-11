@@ -34,18 +34,18 @@ namespace TimeTravel
                 "Eastwood with this exciting adventure.", Properties.Resources.wild_west, "Wild Wild West");
         Location roaring20sLocation = new Location(
             "Ahh. The Roaring 20’s. What a time to be alive!" +
-            "Jazz! The Harlem Renaissance! Women’s rights!" +
-            "Speakeasies! Mobsters!" +
-            "The life of flappers and the like"
-            +"seems so much more exciting"+
-            "than your normal trek to neighborhood bar-" +
-            "legally." +
-            "Careful not to get too zozzled and" +
-            "pull a David Boone, though."+
-            "You might land yourself in the Big House" +
-            "with no cabbage." +
-            "If this golden age of America"+
-            "doesn’t appeal to you, go tell it to Sweeney.", Properties.Resources.roaring20s, "The Roaring 20's");
+            " Jazz! The Harlem Renaissance! Women’s rights!" +
+            " Speakeasies! Mobsters!" +
+            " The life of flappers and the like"
+            +" seems so much more exciting"+
+            " than your normal trek to neighborhood bar-" +
+            " legally." +
+            " Careful not to get too zozzled and" +
+            " pull a David Boone, though."+
+            " You might land yourself in the Big House" +
+            " with no cabbage." +
+            " If this golden age of America"+
+            " doesn’t appeal to you, go tell it to Sweeney.", Properties.Resources.roaring20s, "The Roaring 20's");
         
         Location worldWarIILocation = new Location("World War II info", Properties.Resources.hitler, "World War II");
         Location futureLocation = new Location("Future info", Properties.Resources.futureCity, "The Future");
@@ -71,11 +71,6 @@ namespace TimeTravel
                 cboTravelOptions.Items.Add(location);
             }
             cboTravelOptions.SelectedIndex = 0;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -191,11 +186,18 @@ namespace TimeTravel
 
         private void btnChooseVacay_Click(object sender, EventArgs e)
         {
-
-            frmBookingDate BookingDate = new frmBookingDate();
-            BookingDate.SelectedLocation = location.name;  
-            BookingDate.Show();
-            
+            if (location != null)
+            {
+                location.name = "";
+                MessageBox.Show("You forgot to select an exciting time period to travel to!", "Whoops!");
+            }
+            else
+            {
+                //need to fix exception handling for booking date
+                frmBookingDate BookingDate = new frmBookingDate();
+                BookingDate.SelectedLocation = location.name;
+                BookingDate.Show();
+            }
         }
 
     }

@@ -15,35 +15,31 @@ namespace TimeTravel
         public frmBookingDate()
         {
             InitializeComponent();
-            //retrieving static value from frmVacaChooser-Needs work
             txtLocation.Text = frmVacaChooser.SelectedItem;
         }
 
-    private void frmBookingDate_Load(object sender, EventArgs e)
+        private void frmBookingDate_Load(object sender, EventArgs e)
         {
             //label display at bottom of form
             label6.Text = ("*Note, regardless of the duration of your trip," +
                 "You will leave and return to the present time on the same date");
-            //switch statement to display different picture depending on vacation time period
-            //Display Time Period Selected from frm VacaChooser-tripLocation place holder variable until frmVacaChooser complete
-            //txtLocation.Text = Convert.ToString(tripLocation);
         }
         public void CreateDateTimePicker()
         {
             //need to set default to null or "Please Choose Date"
-            DateTimePicker datePicker = new DateTimePicker();
+            DateTimePicker dtpTripDate = new DateTimePicker();
 
             // Set the MinDate and MaxDate.
-            datePicker.MaxDate = new DateTime(2999, 12, 31);
-            datePicker.MinDate = DateTime.Today;
+            dtpTripDate.MaxDate = new DateTime(2999, 12, 31);
+            dtpTripDate.MinDate = DateTime.Today;
 
             // Set the CustomFormat string.
-            datePicker.CustomFormat = "MMMM dd, yyyy - dddd";
-            datePicker.Format = DateTimePickerFormat.Custom;
+            dtpTripDate.CustomFormat = "MMMM dd, yyyy - dddd";
+            dtpTripDate.Format = DateTimePickerFormat.Custom;
 
             // Show the CheckBox and display the control as an up-down control.
-            datePicker.ShowCheckBox = true;
-            datePicker.ShowUpDown = true;
+            dtpTripDate.ShowCheckBox = true;
+            dtpTripDate.ShowUpDown = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -60,31 +56,28 @@ namespace TimeTravel
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            // diaplay message box if no data in duration text box
-            if (txtDuration.Text == "")
-            {
-                MessageBox.Show("Please enter the length of time you wish to be gone.", "Duration Required");
-                txtDuration.Focus();
-            }
             // display dialog box to connfirm selections
-            //tripLocation and tripDate variables to be retrieved from form 1
+            if (MessageBox.Show("Do you want to book this vacation?", "Confirmation"
+                    , MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                    == DialogResult.Yes)
+                if (txtDuration.Text == "")
+                {
+                    // diaplay message box if no data in duration text box
+                    MessageBox.Show("Please enter the length of time you wish to be gone.", "Duration Required");
+                    txtDuration.Focus();
+                }
+                if (txtDateSelected.Text == "")
+                {
+                    MessageBox.Show("Please choose the date you wish to travel.", "Date Required.");
+                }
+                else
 
-            //This messagebox needs to NOT show right after the error. Maybe a try-catch before if-else?
-             if (MessageBox.Show("Do you want to book this vacation?", "..."
-                //+ "Location: " + tripLocation +" " + "Date: " tripDate + ".", "Book Trip"
-                                 ,MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-                                 == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            else
-            {
-                this.Close();
-            }
-
+                {
+                    Application.Exit();
+                }
 
         }
-        
+
         public string SelectedLocation
         {
             set { txtLocation.Text = value; }
@@ -94,6 +87,7 @@ namespace TimeTravel
         {
             //Show date selected in text box
             txtDateSelected.Text = Convert.ToString(dtpTripDate.Value.Date);
+            txtDuration.Focus();
         }
     }
 }

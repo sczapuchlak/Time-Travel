@@ -50,23 +50,22 @@
             this.label1.Size = new System.Drawing.Size(739, 52);
             this.label1.TabIndex = 0;
             this.label1.Text = "Where Would You Like To Travel?";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cboTravelOptions
             // 
             this.cboTravelOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTravelOptions.FormattingEnabled = true;
             this.cboTravelOptions.Location = new System.Drawing.Point(180, 84);
-            this.cboTravelOptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboTravelOptions.Margin = new System.Windows.Forms.Padding(4);
             this.cboTravelOptions.Name = "cboTravelOptions";
             this.cboTravelOptions.Size = new System.Drawing.Size(447, 38);
-            this.cboTravelOptions.TabIndex = 1;
+            this.cboTravelOptions.TabIndex = 0;
             this.cboTravelOptions.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pboxLocationPicture
             // 
             this.pboxLocationPicture.Location = new System.Drawing.Point(472, 159);
-            this.pboxLocationPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pboxLocationPicture.Margin = new System.Windows.Forms.Padding(4);
             this.pboxLocationPicture.Name = "pboxLocationPicture";
             this.pboxLocationPicture.Size = new System.Drawing.Size(337, 276);
             this.pboxLocationPicture.TabIndex = 2;
@@ -79,16 +78,16 @@
             this.lblLocationDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocationDesc.Name = "lblLocationDesc";
             this.lblLocationDesc.Size = new System.Drawing.Size(331, 276);
-            this.lblLocationDesc.TabIndex = 3;
+            this.lblLocationDesc.TabIndex = 99;
             this.lblLocationDesc.Text = "Location Description";
             // 
             // btnChooseVacay
             // 
             this.btnChooseVacay.Location = new System.Drawing.Point(137, 443);
-            this.btnChooseVacay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChooseVacay.Margin = new System.Windows.Forms.Padding(4);
             this.btnChooseVacay.Name = "btnChooseVacay";
             this.btnChooseVacay.Size = new System.Drawing.Size(167, 28);
-            this.btnChooseVacay.TabIndex = 4;
+            this.btnChooseVacay.TabIndex = 1;
             this.btnChooseVacay.Text = "Choose This Vacation";
             this.btnChooseVacay.UseVisualStyleBackColor = true;
             this.btnChooseVacay.Click += new System.EventHandler(this.btnChooseVacay_Click);
@@ -97,10 +96,10 @@
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(559, 443);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(167, 28);
-            this.btnExit.TabIndex = 5;
+            this.btnExit.TabIndex = 2;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -120,9 +119,9 @@
             this.Controls.Add(this.pboxLocationPicture);
             this.Controls.Add(this.cboTravelOptions);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmVacaChooser";
-            this.Text = "Form1";
+            this.Text = "Choose your destination!";
             ((System.ComponentModel.ISupportInitialize)(this.pboxLocationPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

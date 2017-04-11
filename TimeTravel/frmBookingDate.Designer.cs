@@ -46,17 +46,19 @@
             // dtpTripDate
             // 
             this.dtpTripDate.Location = new System.Drawing.Point(43, 138);
+            this.dtpTripDate.MinDate = new System.DateTime(2017, 4, 11, 14, 18, 59, 0);
             this.dtpTripDate.Name = "dtpTripDate";
             this.dtpTripDate.Size = new System.Drawing.Size(200, 22);
             this.dtpTripDate.TabIndex = 0;
+            this.dtpTripDate.Value = new System.DateTime(2017, 4, 11, 14, 18, 59, 0);
             this.dtpTripDate.ValueChanged += new System.EventHandler(this.dtpTripDate_ValueChanged);
             // 
             // btnBack
             // 
             this.btnBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnBack.Location = new System.Drawing.Point(360, 296);
+            this.btnBack.Location = new System.Drawing.Point(445, 326);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(63, 25);
+            this.btnBack.Size = new System.Drawing.Size(223, 35);
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -64,20 +66,20 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(445, 279);
+            this.btnConfirm.Location = new System.Drawing.Point(445, 245);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(100, 42);
-            this.btnConfirm.TabIndex = 3;
+            this.btnConfirm.Size = new System.Drawing.Size(223, 35);
+            this.btnConfirm.TabIndex = 2;
             this.btnConfirm.Text = "Confirm Selections";
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(568, 279);
+            this.btnCancel.Location = new System.Drawing.Point(445, 286);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 42);
-            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Size = new System.Drawing.Size(223, 34);
+            this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Cancel All";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.button3_Click);
