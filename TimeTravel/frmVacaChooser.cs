@@ -13,142 +13,109 @@ namespace TimeTravel
     public partial class frmVacaChooser : Form
     {
         //creating instances of the Location class for each location  
-<<<<<<< HEAD
-        Location prehistoricLocation = new Location(
-            "Dinosaurs, Terror, Cavemen. Do those words make your" +
-            " ears perk up? Do you spend hours thinking about how you " +
-            "would ride your pterodactyl around town? Well then, look no further" +
-            "because we bring the dino days right to you. Get ready for some good old" +
-            "fashioned flame-making and huntin for your dinner. If this doesn't sell you on" +
-            "the trip, for a limited time, we will be giving you your own dino to tear up the" +
-            "town *literally* . -T-rex "
-            , Properties.Resources.dinos1, "Prehistoric Era");
+        Location prehistoricLocation = new Location("Dinosaurs, Terror, Cavemen. Do those words make your" +
 
-        Location greeceLocation = new Location(
-            " The year is 478 BCE. It’s the" +
-            " beginning of a period of relative calm in Ancient Greece. " +
-            "Do you want to be an enslaved prisoner of war, trying to work your" +
-            " way up to freedom? Do you want" +
-            " to be a poor agricultural worker, experiencing the" +
-            " beauty of the Greek countryside in person? Do you want to be a " +
-            " Citizen Merchant, working to amass wealth " +
-            "and power? Or do you fancy the life of leisure as an Aristocrat, " +
-            "free to visit the Theatre and participate in philosophical pursuits?" +
-            " The choice is yours!"
-            , Properties.Resources.greece, "Ancient Greece");
+" ears perk up? Do you spend hours thinking about how you " +
 
+"would ride your pterodactyl around town? Well then, look no further" +
+
+"because we bring the dino days right to you. Get ready for some good old" +
+
+"fashioned flame-making and huntin for your dinner. If this doesn't sell you on" +
+
+"the trip, for a limited time, we will be giving you your own dino to tear up the" +
+
+"town *literally* . -T-rex ", Properties.Resources.dinos, "Prehistoric Era");
+
+        Location greeceLocation = new Location(" The year is 478 BCE. It’s the" +
+
+" beginning of a period of relative calm in Ancient Greece. " +
+
+"Do you want to be an enslaved prisoner of war, trying to work your" +
+
+" way up to freedom? Do you want" +
+
+" to be a poor agricultural worker, experiencing the" +
+
+" beauty of the Greek countryside in person? Do you want to be a " +
+
+" Citizen Merchant, working to amass wealth " +
+
+"and power? Or do you fancy the life of leisure as an Aristocrat, " +
+
+"free to visit the Theatre and participate in philosophical pursuits?" +
+
+" The choice is yours!", Properties.Resources.greece, "Ancient Greece");
         Location egyptLocation = new Location("Ever wonder what the Great Sphinx " +
-                "of Giza looked like before it was missing " +
-                "a nose? Well then, this trip is for you! " +
-                "Work on your tan while immersing yourself " +
-                "in one of the most influential cultures " +
-                "of ancient times.", Properties.Resources.egypt, "Ancient Egypt");
+                " of Giza looked like before it was missing " +
+                " a nose? Well then, this trip is for you! "  +
+                " Work on your tan while immersing yourself " +
+                " in one of the most influential cultures "  +
+                " of ancient times.", Properties.Resources.egypt, "Ancient Egypt");
+        Location renaissanceLocation = new Location("The year is 1475. The City is Venice." +
 
-        Location renaissanceLocation = new Location(
-            "The year is 1475. The City is Venice."+
-            " Who will you be ? Servant, Artisan, Merchant, or a Partician ?" +
-            " Servants are just beginning to awaken to their rights as individuals." +
-            " Artisan’s create beautiful masterpieces and enjoy the comeraderie of other" +
-            " tradesmen in guilds and organizations.Merchants have all the advantages of " +
-            " wealth and working toward social success.Patricians, the nobility," +
-            " are born into privilege and enjoy power and social opportunities unrivaled in" +
-            " today’s society." +
-            " Only you can decide." 
-          
-            , Properties.Resources.ren, "Renaissance");
+" Who will you be ? Servant, Artisan, Merchant, or a Partician ?" +
 
-        Location pirateLocation = new Location(
-           "Arrrr’ ye ready mate ? Have you ever looked in the mirror and" +
-            " said to yourself “the only thing missing in my life " +
-            "is an eye patch and parrot on my shoulder”? If so," +
-            " then the golden age of piracy is" +
-            " for you! Be prepared to be sent back to 1680, where" +
-            " you will be a scallywag under Blackbeard himself." +
-           "Not only will you" +
-            " arrive back from your vacation with a nice tan, but you" +
-            " may also arrive a few doubloons heavier in the pockets."
-            , Properties.Resources.pirate_ship_2, "Golden Age of Piracy");
+" Servants are just beginning to awaken to their rights as individuals." +
 
-        Location britain19thLocation = new Location(
-            "Experience the Industrial Revolution first hand as a " +
-            "Factory worker. Can you move up into" +
-            " a better position, or will you be swallowed up by progress?" +
-            " As a shopkeeper, work to maintain your social standing " +
-            " to attract those wealthy customers! As a merchant," +
-            " win your way to riches and fame." +
-            " As a member of an Aristocratic family, learn how to" +
-            " make connections to maintain your social standing " +
-            " and wealth. Don’t embarrass the head of your family or they might disown you!" 
-            , Properties.Resources._19thcentury, "19th Century Britain");
+" Artisan’s create beautiful masterpieces and enjoy the comeraderie of other" +
 
-        Location wildWestLocation = new Location("Cowboys and awesome train " +
-                "fights, enough said. If that does not " +
-                "sell you on traveling back to the wild " +
-                "west perhaps wearing a bandana and " +
-                "galloping across an endless field of " +
-                "prairie grass will. Exercise your right " +
-                "to bear arms and channel your inner Clint " +
-                "Eastwood with this exciting adventure.", Properties.Resources.wild_west, "Wild Wild West");
+" tradesmen in guilds and organizations.Merchants have all the advantages of " +
 
-=======
-        Location prehistoricLocation = new Location("Prehistoric info", Properties.Resources.dinos, "Prehistoric Era");
-        Location greeceLocation = new Location("Greece info", Properties.Resources.greece, "Ancient Greece");
-        Location egyptLocation = new Location("Ever wonder what the Great Sphinx " +
-                "of Giza looked like before it was missing " +
-                "a nose? Well then, this trip is for you! "  +
-                "Work on your tan while immersing yourself " +
-                "in one of the most influential cultures "  +
-                "of ancient times.", Properties.Resources.egypt, "Ancient Egypt");
-        Location renaissanceLocation = new Location("Renaissance info", Properties.Resources.renItaly, "Renaissance");
-        Location pirateLocation = new Location("Pirate info", Properties.Resources.pirate_ship, "Golden Age of Piracy");
-        Location britain19thLocation = new Location("19th Century Britain info", Properties.Resources._19thcentury, "19th Century Britain");
+" wealth and working toward social success.Patricians, the nobility," +
+
+" are born into privilege and enjoy power and social opportunities unrivaled in" +
+
+" today’s society." +
+
+" Only you can decide.", Properties.Resources.renItaly, "Renaissance");
+        Location pirateLocation = new Location("Arrrr’ ye ready mate ? Have you ever looked in the mirror and" +
+
+" said to yourself “the only thing missing in my life " +
+
+"is an eye patch and parrot on my shoulder”? If so," +
+
+" then the golden age of piracy is" +
+
+" for you! Be prepared to be sent back to 1680, where" +
+
+" you will be a scallywag under Blackbeard himself." +
+
+"Not only will you" +
+
+" arrive back from your vacation with a nice tan, but you" +
+
+" may also arrive a few doubloons heavier in the pockets.", Properties.Resources.pirate_ship, "Golden Age of Piracy");
+        Location britain19thLocation = new Location("Experience the Industrial Revolution first hand as a " +
+
+"Factory worker. Can you move up into" +
+
+" a better position, or will you be swallowed up by progress?" +
+
+" As a shopkeeper, work to maintain your social standing " +
+
+" to attract those wealthy customers! As a merchant," +
+
+" win your way to riches and fame." +
+
+" As a member of an Aristocratic family, learn how to" +
+
+" make connections to maintain your social standing " +
+
+" and wealth. Don’t embarrass the head of your family or they might disown you!", Properties.Resources._19thcentury, "19th Century Britain");
         Location wildWestLocation = new Location("Cowboys and awesome train "  +
-                "fights, enough said. If that does not "  +
-                "sell you on traveling back to the wild "  +
-                "west perhaps wearing a bandana and "  +
-                "galloping across an endless field of "  +
-                "prairie grass will. Exercise your right "  +
-                "to bear arms and channel your inner Clint "  +
-                "Eastwood with this exciting adventure.", Properties.Resources.wild_west, "Wild Wild West");
->>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
+                " fights, enough said. If that does not "  +
+                " sell you on traveling back to the wild "  +
+                " west perhaps wearing a bandana and "  +
+                " galloping across an endless field of "  +
+                " prairie grass will. Exercise your right "  +
+                " to bear arms and channel your inner Clint "  +
+                " Eastwood with this exciting adventure.", Properties.Resources.wild_west, "Wild Wild West");
         Location roaring20sLocation = new Location(
             "Ahh. The Roaring 20’s. What a time to be alive!" +
             " Jazz! The Harlem Renaissance! Women’s rights!" +
             " Speakeasies! Mobsters!" +
             " The life of flappers and the like"
-<<<<<<< HEAD
-            + " seems so much more exciting" +
-            " than your normal trek to neighborhood bar-" +
-            " legally." +
-            " Careful not to get too zozzled and" +
-            " pull a David Boone, though." +
-            " You might land yourself in the Big House" +
-            " with no cabbage." +
-            " If this golden age of America" +
-            " doesn’t appeal to you, go tell it to Sweeney.", Properties.Resources.roaring20s, "The Roaring 20's");
-
-        Location medievalLocation = new Location(
-            "Dungeons, dragons, knights and castles!"+
-            "In medieval times,people had much more contact " +
-            "with live pigs than we do today-this could be dangerous, and even deadly."+
-            "There were multiple accounts of pigs eating children.Contrary to popular belief, Hygiene was considered" +
-            " a sign that you were civilised, and cleanliness meant bathing. "+
-            "Live out your World of Warcraft and Dungeons and Dragons dreams ( we can't promise"+
-            "you will like the smells,laws, and constant death though"+
-            " Vacation at your own risk!"
-            , Properties.Resources.medieval, "The Middle Ages");
-
-        Location futureLocation = new Location(
-            "Are you just fed up with living on earth? Do you think" +
-            " you're too OUT OF THIS WORLD to be living on earth? With" +
-            " our vacations to the future *cue spooky noise* " +
-            ", you can now be one of the few who know what it " +
-            " is like to live on Mars. Are there aliens? Do we" +
-            " talk to them? Get out your hoverboard and take it for" +
-            " a spin around the galaxy!" +
-            " Take a trip to the future to find out how FAR OUT the" +
-            " life in outer space is!", Properties.Resources.futureCity1, "The Future");
-=======
             +" seems so much more exciting"+
             " than your normal trek to neighborhood bar-" +
             " legally." +
@@ -159,9 +126,16 @@ namespace TimeTravel
             " If this golden age of America"+
             " doesn’t appeal to you, go tell it to Sweeney.", Properties.Resources.roaring20s, "The Roaring 20's");
         
-        Location worldWarIILocation = new Location("World War II info", Properties.Resources.hitler, "World War II");
+        Location worldWarIILocation = new Location("Want to experience something a little less fun?"+
+            " Maybe something a little dangerous?"+
+            " World War II may be the destination for you!" +
+            " Most of our young men, and some of our young women,"+
+            " were sent away to a great war."+
+            " Women were helping in factories"+
+            " where they weren't allowed to work previously." +
+            " Immerse yourself in a truly tragic time period." 
+            , Properties.Resources.hitler, "World War II");
         Location futureLocation = new Location("Future info", Properties.Resources.futureCity, "The Future");
->>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
 
         //selected location
         Location location = null;
@@ -176,11 +150,7 @@ namespace TimeTravel
             pboxLocationPicture.Visible = false;
             string[] travelLocations =
          {"Select a vacation...","Prehistoric Era", "Ancient Greece", "Ancient Egypt", "Renaissance",
-<<<<<<< HEAD
-            "Golden Age of Piracy", "19th Century Britain", "Wild Wild West", "The Roaring 20's", "Medieval Times", "The Future"};
-=======
             "Golden Age of Piracy", "19th Century Britain", "Wild Wild West", "The Roaring 20's", "World War II", "The Future"};
->>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
 
             //use a for each loop to loop throught the travelLocations to add it to the checkbox 
             foreach (string location in travelLocations)
@@ -231,15 +201,9 @@ namespace TimeTravel
                     twenties();
                     break;
                 case 9:
-<<<<<<< HEAD
-                    medieval();
-                    break;
-                case 10:
-=======
                     worldWarTwo();
                     break;
                 case 10:               
->>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
                     future();
                     break;
             }
@@ -292,15 +256,9 @@ namespace TimeTravel
             location = roaring20sLocation;
         }
 
-<<<<<<< HEAD
-        public void medieval()
-        {
-            location = medievalLocation;
-=======
         public void worldWarTwo()
         {
             location = worldWarIILocation;
->>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
         }
 
         public void future()
@@ -315,16 +273,7 @@ namespace TimeTravel
 
         private void btnChooseVacay_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            if (location == null)
-=======
-            if (location != null)
->>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
-            {
-                location.name = "";
-                MessageBox.Show("You forgot to select an exciting time period to travel to!", "Whoops!");
-            }
-            else
+
             {
                 //need to fix exception handling for booking date
                 frmBookingDate BookingDate = new frmBookingDate();
@@ -333,17 +282,5 @@ namespace TimeTravel
             }
         }
 
-<<<<<<< HEAD
-        private void lblLocationDesc_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pboxLocationPicture_Click(object sender, EventArgs e)
-        {
-
-        }
-=======
->>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
     }
 }
