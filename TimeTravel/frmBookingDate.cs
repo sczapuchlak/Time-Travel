@@ -56,6 +56,8 @@ namespace TimeTravel
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+
+            
             // display dialog box to connfirm selections
             if (MessageBox.Show("Do you want to book this vacation?", "Confirmation"
                     , MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -73,11 +75,25 @@ namespace TimeTravel
                 else
 
                 {
-                    Application.Exit();
+                MessageBox.Show(printReceipt(), "Receipt", MessageBoxButtons.OK);
+                    
                 }
-
+            Application.Exit();
+              
         }
 
+
+        //gives the user a nice little sendoff message :)
+        private string printReceipt()
+        {
+        
+                string receipt = "Your trip is all booked!" +
+                " Your card will be charged 1,000,000 USD. " +
+                    " Buckle up and pack your favorite time period" +
+                    " clothing! Have fun!";
+                return receipt;
+            }
+        
         public string SelectedLocation
         {
             set { txtLocation.Text = value; }

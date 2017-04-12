@@ -64,6 +64,8 @@
             // pboxLocationPicture
             // 
             this.pboxLocationPicture.BackColor = System.Drawing.Color.Transparent;
+            this.pboxLocationPicture.BackgroundImage = global::TimeTravel.Properties.Resources.dr1;
+            this.pboxLocationPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pboxLocationPicture.Location = new System.Drawing.Point(340, 129);
             this.pboxLocationPicture.Name = "pboxLocationPicture";
             this.pboxLocationPicture.Size = new System.Drawing.Size(276, 224);
@@ -79,7 +81,7 @@
             this.lblLocationDesc.Name = "lblLocationDesc";
             this.lblLocationDesc.Size = new System.Drawing.Size(289, 224);
             this.lblLocationDesc.TabIndex = 99;
-            this.lblLocationDesc.Text = "Location Description";
+            this.lblLocationDesc.Text = "Welcome to Girl City Time Travel!";
             this.lblLocationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblLocationDesc.Click += new System.EventHandler(this.lblLocationDesc_Click);
             // 

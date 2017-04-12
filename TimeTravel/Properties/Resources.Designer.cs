@@ -113,6 +113,26 @@ namespace TimeTravel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dr_seuss {
+            get {
+                object obj = ResourceManager.GetObject("dr.seuss", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dr1 {
+            get {
+                object obj = ResourceManager.GetObject("dr1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap egypt {
             get {
                 object obj = ResourceManager.GetObject("egypt", resourceCulture);
@@ -166,6 +186,16 @@ namespace TimeTravel.Properties {
         internal static System.Drawing.Bitmap hitler1 {
             get {
                 object obj = ResourceManager.GetObject("hitler1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medieval {
+            get {
+                object obj = ResourceManager.GetObject("medieval", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
