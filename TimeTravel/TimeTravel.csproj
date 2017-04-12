@@ -132,6 +132,7 @@
   <ItemGroup>
     <None Include="Resources\the_time_machine_large_01.jpg" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <None Include="Resources\ren.jpg" />
   </ItemGroup>
@@ -153,6 +154,8 @@
     <Content Include="Resources\medieval.jpg" />
     <None Include="Resources\medieval1.jpg" />
   </ItemGroup>
+=======
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

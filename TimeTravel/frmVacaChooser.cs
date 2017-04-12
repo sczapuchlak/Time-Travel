@@ -13,6 +13,7 @@ namespace TimeTravel
     public partial class frmVacaChooser : Form
     {
         //creating instances of the Location class for each location  
+<<<<<<< HEAD
         Location prehistoricLocation = new Location(
             "Dinosaurs, Terror, Cavemen. Do those words make your" +
             " ears perk up? Do you spend hours thinking about how you " +
@@ -89,11 +90,33 @@ namespace TimeTravel
                 "to bear arms and channel your inner Clint " +
                 "Eastwood with this exciting adventure.", Properties.Resources.wild_west, "Wild Wild West");
 
+=======
+        Location prehistoricLocation = new Location("Prehistoric info", Properties.Resources.dinos, "Prehistoric Era");
+        Location greeceLocation = new Location("Greece info", Properties.Resources.greece, "Ancient Greece");
+        Location egyptLocation = new Location("Ever wonder what the Great Sphinx " +
+                "of Giza looked like before it was missing " +
+                "a nose? Well then, this trip is for you! "  +
+                "Work on your tan while immersing yourself " +
+                "in one of the most influential cultures "  +
+                "of ancient times.", Properties.Resources.egypt, "Ancient Egypt");
+        Location renaissanceLocation = new Location("Renaissance info", Properties.Resources.renItaly, "Renaissance");
+        Location pirateLocation = new Location("Pirate info", Properties.Resources.pirate_ship, "Golden Age of Piracy");
+        Location britain19thLocation = new Location("19th Century Britain info", Properties.Resources._19thcentury, "19th Century Britain");
+        Location wildWestLocation = new Location("Cowboys and awesome train "  +
+                "fights, enough said. If that does not "  +
+                "sell you on traveling back to the wild "  +
+                "west perhaps wearing a bandana and "  +
+                "galloping across an endless field of "  +
+                "prairie grass will. Exercise your right "  +
+                "to bear arms and channel your inner Clint "  +
+                "Eastwood with this exciting adventure.", Properties.Resources.wild_west, "Wild Wild West");
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
         Location roaring20sLocation = new Location(
             "Ahh. The Roaring 20’s. What a time to be alive!" +
             " Jazz! The Harlem Renaissance! Women’s rights!" +
             " Speakeasies! Mobsters!" +
             " The life of flappers and the like"
+<<<<<<< HEAD
             + " seems so much more exciting" +
             " than your normal trek to neighborhood bar-" +
             " legally." +
@@ -125,6 +148,20 @@ namespace TimeTravel
             " a spin around the galaxy!" +
             " Take a trip to the future to find out how FAR OUT the" +
             " life in outer space is!", Properties.Resources.futureCity1, "The Future");
+=======
+            +" seems so much more exciting"+
+            " than your normal trek to neighborhood bar-" +
+            " legally." +
+            " Careful not to get too zozzled and" +
+            " pull a David Boone, though."+
+            " You might land yourself in the Big House" +
+            " with no cabbage." +
+            " If this golden age of America"+
+            " doesn’t appeal to you, go tell it to Sweeney.", Properties.Resources.roaring20s, "The Roaring 20's");
+        
+        Location worldWarIILocation = new Location("World War II info", Properties.Resources.hitler, "World War II");
+        Location futureLocation = new Location("Future info", Properties.Resources.futureCity, "The Future");
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
 
         //selected location
         Location location = null;
@@ -139,7 +176,11 @@ namespace TimeTravel
             pboxLocationPicture.Visible = false;
             string[] travelLocations =
          {"Select a vacation...","Prehistoric Era", "Ancient Greece", "Ancient Egypt", "Renaissance",
+<<<<<<< HEAD
             "Golden Age of Piracy", "19th Century Britain", "Wild Wild West", "The Roaring 20's", "Medieval Times", "The Future"};
+=======
+            "Golden Age of Piracy", "19th Century Britain", "Wild Wild West", "The Roaring 20's", "World War II", "The Future"};
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
 
             //use a for each loop to loop throught the travelLocations to add it to the checkbox 
             foreach (string location in travelLocations)
@@ -190,9 +231,15 @@ namespace TimeTravel
                     twenties();
                     break;
                 case 9:
+<<<<<<< HEAD
                     medieval();
                     break;
                 case 10:
+=======
+                    worldWarTwo();
+                    break;
+                case 10:               
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
                     future();
                     break;
             }
@@ -245,9 +292,15 @@ namespace TimeTravel
             location = roaring20sLocation;
         }
 
+<<<<<<< HEAD
         public void medieval()
         {
             location = medievalLocation;
+=======
+        public void worldWarTwo()
+        {
+            location = worldWarIILocation;
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
         }
 
         public void future()
@@ -262,7 +315,11 @@ namespace TimeTravel
 
         private void btnChooseVacay_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (location == null)
+=======
+            if (location != null)
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
             {
                 location.name = "";
                 MessageBox.Show("You forgot to select an exciting time period to travel to!", "Whoops!");
@@ -276,6 +333,7 @@ namespace TimeTravel
             }
         }
 
+<<<<<<< HEAD
         private void lblLocationDesc_Click(object sender, EventArgs e)
         {
 
@@ -285,5 +343,7 @@ namespace TimeTravel
         {
 
         }
+=======
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
     }
 }

@@ -56,8 +56,11 @@ namespace TimeTravel
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
             
+=======
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
             // display dialog box to connfirm selections
             if (MessageBox.Show("Do you want to book this vacation?", "Confirmation"
                     , MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -75,6 +78,7 @@ namespace TimeTravel
                 else
 
                 {
+<<<<<<< HEAD
                 MessageBox.Show(printReceipt(), "Receipt", MessageBoxButtons.OK);
                     
                 }
@@ -94,6 +98,13 @@ namespace TimeTravel
                 return receipt;
             }
         
+=======
+                    Application.Exit();
+                }
+
+        }
+
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
         public string SelectedLocation
         {
             set { txtLocation.Text = value; }

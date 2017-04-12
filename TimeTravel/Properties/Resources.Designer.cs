@@ -103,6 +103,7 @@ namespace TimeTravel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap dinos1 {
             get {
                 object obj = ResourceManager.GetObject("dinos1", resourceCulture);
@@ -133,6 +134,8 @@ namespace TimeTravel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+=======
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
         internal static System.Drawing.Bitmap egypt {
             get {
                 object obj = ResourceManager.GetObject("egypt", resourceCulture);
@@ -153,6 +156,7 @@ namespace TimeTravel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap futureCity1 {
             get {
                 object obj = ResourceManager.GetObject("futureCity1", resourceCulture);
@@ -163,6 +167,8 @@ namespace TimeTravel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+=======
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
         internal static System.Drawing.Bitmap greece {
             get {
                 object obj = ResourceManager.GetObject("greece", resourceCulture);
@@ -183,6 +189,7 @@ namespace TimeTravel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap hitler1 {
             get {
                 object obj = ResourceManager.GetObject("hitler1", resourceCulture);
@@ -203,6 +210,8 @@ namespace TimeTravel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+=======
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
         internal static System.Drawing.Bitmap pirate_ship {
             get {
                 object obj = ResourceManager.GetObject("pirate-ship", resourceCulture);
@@ -223,6 +232,7 @@ namespace TimeTravel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap pirates {
             get {
                 object obj = ResourceManager.GetObject("pirates", resourceCulture);
@@ -243,6 +253,8 @@ namespace TimeTravel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+=======
+>>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
         internal static System.Drawing.Bitmap renItaly {
             get {
                 object obj = ResourceManager.GetObject("renItaly", resourceCulture);
