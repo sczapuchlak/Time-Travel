@@ -12,10 +12,10 @@ namespace TimeTravel
 {
     public partial class frmBookingDate : Form
     {
-        public frmBookingDate()
+        public frmBookingDate(string location)
         {
             InitializeComponent();
-            txtLocation.Text = frmVacaChooser.SelectedItem;
+            txtLocation.Text = location;
         }
 
         private void frmBookingDate_Load(object sender, EventArgs e)
@@ -56,11 +56,11 @@ namespace TimeTravel
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
 
             
-=======
->>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
+
+
             // display dialog box to connfirm selections
             if (MessageBox.Show("Do you want to book this vacation?", "Confirmation"
                     , MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -78,7 +78,7 @@ namespace TimeTravel
                 else
 
                 {
-<<<<<<< HEAD
+
                 MessageBox.Show(printReceipt(), "Receipt", MessageBoxButtons.OK);
                     
                 }
@@ -98,23 +98,23 @@ namespace TimeTravel
                 return receipt;
             }
         
-=======
-                    Application.Exit();
+
+                  
                 }
 
         }
 
->>>>>>> 16e1ce34e21b2c397b95f45fa29ebe5598bd0024
-        public string SelectedLocation
-        {
-            set { txtLocation.Text = value; }
-        }
 
-        private void dtpTripDate_ValueChanged(object sender, EventArgs e)
-        {
+  //      public string SelectedLocation
+  //      {
+      //      set { txtLocation.Text = value; }
+  //      }
+
+   //     private void dtpTripDate_ValueChanged(object sender, EventArgs e)
+   //     {
             //Show date selected in text box
-            txtDateSelected.Text = Convert.ToString(dtpTripDate.Value.Date);
-            txtDuration.Focus();
-        }
-    }
-}
+   //         txtDateSelected.Text = Convert.ToString(dtpTripDate.Value.Date);
+  //          txtDuration.Focus();
+  //      }
+  //  }
+//}
