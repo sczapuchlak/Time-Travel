@@ -279,6 +279,11 @@ private void comboBox1_SelectedIndexChanges(object sender, EventArgs e)
             }
           
             }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
+    }
 
     }
